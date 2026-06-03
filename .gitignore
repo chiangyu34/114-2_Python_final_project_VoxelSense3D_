@@ -1,0 +1,35 @@
+# ── Outputs ───────────────────────────────────────────────
+output/
+output_rgb/
+
+# ── Models (user-supplied) ────────────────────────────────
+models/*
+!models/.gitkeep
+
+# ── Minecraft textures (user-supplied) ────────────────────
+block/*
+!block/.gitkeep
+
+# ── Learning logs / scratch work ──────────────────────────
+day01/
+day02/
+day03/
+day04/
+day05/
+day06/
+day07/
+day08/
+day09/
+day10/
+comments/
+
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ── OS ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

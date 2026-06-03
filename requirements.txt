@@ -1,0 +1,32 @@
+# VoxelSense 3D — Python dependencies
+# Install with:  pip install -r requirements.txt
+#
+# Versions are pinned to ranges that have been tested together.
+# If a package fails to install, see README.md for platform notes.
+
+# ── Core geometry & numerics ────────────────────────────────────────
+trimesh>=4.0,<5.0
+numpy>=1.24,<2.1
+scipy>=1.10
+scikit-image>=0.21
+
+# ── Image I/O for palette building ──────────────────────────────────
+pillow>=10.0
+
+# ── Tabular output (material_list.csv) ──────────────────────────────
+pandas>=2.0
+
+# ── 3D visualisation ────────────────────────────────────────────────
+# pyvista 0.43+ has Plotter.export_html(); older versions are handled
+# by the three-tier fallback in view_result.py.
+pyvista>=0.43
+vtk>=9.2
+
+# ── Matplotlib fallback (when PyVista cannot initialise) ────────────
+matplotlib>=3.7
+
+# ── Optional but recommended ────────────────────────────────────────
+# For trimesh.proximity.closest_point() — speeds up barycentric sampling
+rtree>=1.0
+# For .glb files with embedded textures
+networkx>=3.0

@@ -1,0 +1,17 @@
+# Normalize line endings across platforms
+* text=auto
+
+# Python — force LF
+*.py text eol=lf
+
+# Markdown — force LF
+*.md text eol=lf
+
+# JSON — force LF
+*.json text eol=lf
+
+# Binary files — no line ending conversion
+*.npy binary
+*.png binary
+*.glb binary
+*.obj binary
